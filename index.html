@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age calculator challenge</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <th class="day-header">DAY</th>
+                <th class="month-header">MONTH</th>
+                <th class="year-header">YEAR</th>
+            </tr>
+            <tr>
+                <td><input class="day-input" type="text" placeholder="DD"></td>
+                <td><input class="month-input" type="text" placeholder="MM"></td>
+                <td><input class="year-input" type="text" placeholder="YYYY"></td>
+            </tr>
+            <tr>
+                <td class="error error-day"></td>
+                <td class="error error-month"></td>
+                <td class="error error-year"></td>
+            </tr>
+        </table>
+        <hr class="divider">
+        <div class="result">
+           <p class="year-result results">--</p>
+           <p>YEARS</p>
+           <p class="month-result results">--</p>
+           <p>MONTHS</p>
+           <p class="day-result results">--</p>
+           <p>Days</p>
+           <button class="not-ok"><i class="fa-solid fas fa-times "></i></button>
+           <button onclick="
+           check = true;
+           dayWrong();
+           monthWrong();
+           yearWrong();
+           if(check == true ){
+           age();
+           } 
+           "
+            class="ok"><i class="fa-solid fas fa-check "></i></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

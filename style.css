@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+    width: 100dvw;
+    height: 100dvh;
+    overflow: 0;
+    background: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    width: 70dvw;
+    height: 80dvh;
+    background: white;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.466);
+    border-radius: 30px;
+    border-bottom-right-radius: 200px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+table {
+    border-radius: 30px 30px 0 0;
+    width: 100%;
+    height: 100px;
+    padding: 30px 50px 10px;
+    background-color: rgb(233, 138, 70);
+}
+
+th {
+    text-align: start;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+input {
+    width: 65%;
+    min-height: 100%;
+    padding-top: 10px;
+    font-size: 50px;
+    text-align: center;
+    border: 2px solid black;
+    outline: none;
+}
+
+input::placeholder {
+    font-size: 50px;
+    text-align: center;
+}
+input:focus::placeholder {
+    color: transparent;
+}
+.divider {
+    width: 95%;
+    border-top: 1px dashed black;
+}
+.result {
+    display: grid;
+    grid-template: repeat(3,30%) / repeat(2,25%);
+    align-self: start;
+    width: 75%;
+    height: 75%;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+    font-size: 250%;
+    margin-left: 2%;
+}
+.results {
+    color: blueviolet;
+}
+button {
+    justify-self: end;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px 1px gray;
+    transform: translateX(2.5px);
+}
+.not-ok {
+    background: rgb(240, 71, 71);
+}
+.ok {
+    background: rgb(105, 240, 71);
+}
+.error{
+    color: red;
+}
+@media (max-width:1000px) {
+    .container {
+        width: 95dvw;
+    }
+}
+@media (max-width:700px) {
+    table {
+        padding: 5px;
+    }
+    input {
+        width: 90%;
+        font-size: 40px;
+    }
+    input::placeholder {
+        font-size: 35px;
+    }
+}
